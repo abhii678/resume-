@@ -1,0 +1,174 @@
+%% Resume - Abhijeet Pandey
+
+\documentclass[10pt, a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[top=0.7cm, bottom=0.7cm, left=1.1cm, right=1.1cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{microtype}
+\usepackage{parskip}
+
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+% ---------- Colors ----------
+\definecolor{accent}{RGB}{0, 0, 0}
+\definecolor{lightgray}{RGB}{80, 80, 80}
+
+% ---------- Hyperref ----------
+\hypersetup{
+  colorlinks=true,
+  urlcolor=black,
+  linkcolor=black
+}
+
+% ---------- Section Formatting ----------
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0em}{}
+  [\color{accent}\titlerule]
+\titlespacing{\section}{0pt}{5pt}{2pt}
+
+% ---------- Custom Commands ----------
+\newcommand{\resumeEntry}[4]{%
+  \noindent\textbf{#1} \hfill \textcolor{lightgray}{#3} \\
+  \textit{#2} \hfill \textcolor{lightgray}{#4}
+  \vspace{1pt}
+}
+
+\newcommand{\projectEntry}[2]{%
+  \noindent\textbf{#1} \\
+  \textit{#2}
+  \vspace{1pt}
+}
+
+\setlist[itemize]{noitemsep, topsep=1pt, partopsep=0pt, parsep=0pt, leftmargin=1.2em}
+
+% ============================================================
+\begin{document}
+\pagestyle{empty}
+
+% ---------- Header ----------
+\begin{center}
+  {\Huge\bfseries ABHIJEET PANDEY} \\[4pt]
+  +91 8767208099 \textbar\ Mumbai, India \textbar\ \href{mailto:pandeyabhisp@gmail.com}{pandeyabhisp@gmail.com} \textbar\ \href{https://linkedin.com}{LinkedIn} \textbar\ \href{https://github.com}{Github}
+\end{center}
+
+\vspace{4pt}
+
+% ---------- Professional Summary ----------
+\section{Professional Summary}
+
+Full Stack Developer (Python/JavaScript) with experience in building scalable web applications, REST APIs, and data-driven systems. Skilled in backend development (FastAPI/Flask), frontend fundamentals (HTML, CSS, JavaScript), and database management (PostgreSQL, MongoDB). Strong understanding of SDLC, API design, debugging, and cloud deployment (AWS). 
+
+% ---------- Skills ----------
+\section{Skills}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+  \textbf{Languages}        & Python , Java, JavaScript \\
+  \textbf{Backend}          & FastAPI / Flask, REST APIs, JWT Auth \\
+  \textbf{Data Engineering} & Web Scraping, Data Pipelines, ETL \\
+  \textbf{Databases}        & PostgreSQL, MongoDB \\
+  \textbf{Cloud \& DevOps}  & AWS (EC2, S3), Docker, GitHub Actions \\
+  \textbf{Tools}            & Git, Pandas, NumPy \\
+  \textbf{AI/ML}            & LLMs, RAG Pipelines, Prompt Engineering \\
+\end{tabularx}
+
+% ---------- Projects ----------
+\section{Projects}
+
+\projectEntry{AI Financial Analyst Assistant}{Python $|$ FastAPI $|$ RAG Pipeline $|$ LLM APIs $|$ PostgreSQL}
+\begin{itemize}
+  \item Built a backend-driven financial analysis system with a RAG pipeline and embedding-based semantic search (OpenAI/HuggingFace)
+  \item Developed REST APIs for query processing, data ingestion, and analytics workflows using FastAPI
+  \item Designed scalable data handling and storage with efficient retrieval and modular backend architecture
+\end{itemize}
+
+\projectEntry{The EEG Lab}{Python $|$ REST APIs $|$ Data Engineering $|$ Signal Processing}
+\begin{itemize}
+  \item Built a scalable data pipeline for EEG signal processing, including ingestion, preprocessing, and feature extraction (FFT, band power)
+  \item Developed REST APIs for data handling and analytics workflows, enabling structured access to processed signals
+  \item Implemented data validation and processing pipelines, improving analytical accuracy and ensuring reliable real-time insights
+\end{itemize}
+
+\projectEntry{Smart Intrusion Detection System}{Python $|$ Machine Learning $|$ REST APIs $|$ Data Analysis}
+\begin{itemize}
+  \item Built an AI-based intrusion detection system using classification and anomaly detection models to identify malicious network activity
+  \item Designed a risk scoring and alert prioritization system to reduce false positives and improve incident response efficiency
+  \item Exposed model predictions via REST APIs for real-time threat detection and monitoring
+\end{itemize}
+
+% ---------- Work Experience ----------
+\section{Work Experience}
+
+\resumeEntry
+  {Operations Officer}
+  {Computer Society of India (CSI)}
+  {Mumbai, India}
+  {Aug 2024 -- May 2025}
+\begin{itemize}
+  \item Designed and developed backend services and REST APIs to support platform features and user workflows
+  \item Led end-to-end feature delivery from requirement gathering to deployment using Git-based version control
+\end{itemize}
+
+\resumeEntry
+  {Junior Software Developer}
+  {Computer Society of India (CSI)}
+  {Mumbai, India}
+  {May 2023 -- May 2024}
+\begin{itemize}
+  \item Built and enhanced backend functionalities, including API development and integration for platform features
+  \item Implemented structured data handling and validation processes to improve system reliability and performance
+  \item Participated in Agile development cycles, contributing to feature design, testing, and deployment workflows
+  
+\end{itemize}
+
+
+% ---------- Education ----------
+\section{Education}
+
+\resumeEntry
+  {Vivekanand Education Society's Institute of Technology}
+  {Bachelor's in Electronics and Computer Science}
+  {Mumbai, India}
+  {Aug 2022 -- May 2026}
+
+\noindent CGPA: \textbf{7.55}
+
+\vspace{4pt}
+
+\resumeEntry
+  {St. Wilfred's School}
+  {Class XII (HSC)}
+  {Panvel, Raigad}
+  {Apr 2020 -- May 2021}
+
+\noindent Percentage: \textbf{79.6\%}
+
+\vspace{4pt}
+
+\resumeEntry
+  {Jindal Mount Litera Zee School}
+  {Class X (SSC)}
+  {Raigad}
+  {Apr 2018 -- May 2019}
+
+\noindent Percentage: \textbf{85.4\%}
+
+% ---------- Leadership ----------
+\section{Leadership \& Volunteering}
+
+\begin{itemize}
+  \item Conducted technical workshops on backend development, REST API design, and system architecture for 70+ students
+  \item Mentored peers on building scalable applications, focusing on data handling, API integration, and backend best practices
+\end{itemize}
+
+\end{document}
